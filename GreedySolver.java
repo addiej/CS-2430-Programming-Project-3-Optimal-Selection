@@ -1,4 +1,26 @@
 // Implements the three greedy strategies for the knapsack problem.
 public class GreedySolver {
+    // Selects experiments by highest science rating first.
+    public static Experiment[] highestRatingFirst(Experiment[] experiments) {
+        Experiment[] selected = new Experiment[experiments.length];
+        int selectedCount = 0;
+        Experiment[] sorted = experiments.clone();
+        java.util.Arrays.sort(sorted, (a, b) -> Integer.compare(b.rating, a.rating));
+        for (Experiment experiment : sorted) {
+            if (experiment.id.equals("11a") &&
+                !ManifestEvaluator.containsExperiment(
+                    java.util.Arrays.copyOf(selected, selectedCount), "11")) {
+                continue;
+            }
+            Experiment[] tentative = java.util.Arrays.copyOf(selected, selectedCount + 1);
+            tentative[selectedCount] = experiment;
 
+            if (ManifestEvaluator.isValid(tentative)) {
+                selected[selectedCount] = experiment;
+                selectedCount++;
+            }
+          
+        }
+        return java.util.Arrays.copyOf(selected, selectedCount);
+    }
 }

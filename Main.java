@@ -6,6 +6,10 @@
 
 public class Main {
     public static void main(String[] args) {
-    
+        
+            // Stores the 13 experiments from the revised payload manifest.
+            Experiment[] experiments = new Experiment[13];
+        
     }
+    
 }

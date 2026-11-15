@@ -5,5 +5,7 @@
 //Purpose: Compare greedy algorithms and brute-force search to optimize a science payload.
 
 public class Main {
-
+    public static void main(String[] args) {
+    
+    }
 }

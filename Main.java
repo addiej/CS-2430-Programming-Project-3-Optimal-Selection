@@ -3,3 +3,7 @@
 //Project: Programming Project 3 - Fall 2026
 //The Knapsack Problem
 //Purpose: Compare greedy algorithms and brute-force search to optimize a science payload.
+
+public class main {
+
+{

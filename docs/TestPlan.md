@@ -16,6 +16,31 @@ Test 3: Experiment 11a Prerequisite
 - Expected: Invalid because Experiment 11 is required.
 - Actual: Pending implementation.
 
+Test 4: Experiment 11 and 11a Together
+- Input: Experiments 11 and 11a
+- Expected: Valid; adjusted mass = 90 kg; total rating = 12.
+- Actual: Pending implementation.
+
+Test 5: Thermal Credit Applied Once
+- Input: Experiments 6 and 12 together
+- Expected: Baseline mass = 34 kg; adjusted mass = 27 kg. The 7 kg credit is applied exactly once.
+- Actual: Pending implementation.
+
+Test 6: Empty Manifest
+- Input: No experiments selected
+- Expected: Valid; adjusted mass = 0 kg; total rating = 0.
+- Actual: Pending implementation.
+
+Test 7: Greedy Strategies
+- Input: All 13 experiments
+- Expected: All three greedy strategies produce valid manifests using their specified sorting rules. Each displays selected experiments, adjusted mass, and total rating.
+- Actual: Pending implementation.
+
+Test 8: Brute-Force Search
+- Input: All 13 experiments
+- Expected: Exactly 8,192 subsets evaluated, including invalid subsets. The three highest-rated valid subsets are displayed, with an optimal solution identified.
+- Actual: Pending implementation.
+
 Additional Verification
 - Confirm no accepted solution exceeds 700 kg adjusted mass.
 - Confirm brute force evaluates all 8,192 subsets.

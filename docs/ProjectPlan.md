@@ -8,8 +8,8 @@
 
 ## Project Milestones
 
-| Task | Status | Responsible | **Commit Evidence**
-|---|---|---|
+| Task | Status | Responsible | Commit Evidence |
+|---|---|---|---|
 | Create repository and invite collaborators | Done | Addie | 
 | Create `/docs` folder and planning documents | Done | Addie | 10d6f21, b88ad4f, bd8a94b
 | Review revised Change Request | Done | Addie |

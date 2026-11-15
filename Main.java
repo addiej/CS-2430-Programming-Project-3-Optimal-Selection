@@ -23,7 +23,45 @@ public class Main {
             experiments[10] = new Experiment("11", "Cosmic Rays - Primary Band", 80, 7);
             experiments[11] = new Experiment("11a", "Cosmic Rays - Secondary Band", 10, 5);
             experiments[12] = new Experiment("12", "Yeast Fermentation", 27, 4);
-            
-    }
+        
+            // Run the highest-rating-first greedy strategy.
+            Experiment[] ratingResult = GreedySolver.highestRatingFirst(experiments);
+            // Run the lightest-mass-first greedy strategy.
+            Experiment[] massResult = GreedySolver.lightestMassFirst(experiments);
+            // Run the highest-rating-to-mass-ratio greedy strategy.
+            Experiment[] ratioResult = GreedySolver.highestRatioFirst(experiments);
+            // Run brute-force search to find the three best valid solutions.
+        
+            BruteForceSolver.findBestSolutions(experiments);
+            // Display the highest-rating-first greedy result.
+            System.out.println("\nHighest Rating First:");
+            for (Experiment experiment : ratingResult) {
+                System.out.println("  " + experiment.id + ": " + experiment.name);
+            }
+        System.out.println("Adjusted mass: " +
+        ManifestEvaluator.calculateAdjustedMass(ratingResult) + " kg");
+        
+        System.out.println("Total science rating: " +
+        ManifestEvaluator.calculateRating(ratingResult));
+        // Display the lightest-mass-first greedy result.
+        System.out.println("\nLightest Mass First:");
+        for (Experiment experiment : massResult) {
+            System.out.println("  " + experiment.id + ": " + experiment.name);
+        }
+        System.out.println("Adjusted mass: " +
+        ManifestEvaluator.calculateAdjustedMass(massResult) + " kg");
     
+        System.out.println("Total science rating: " +
+        ManifestEvaluator.calculateRating(massResult));
+        // Display the highest-ratio-first greedy result.
+        System.out.println("\nHighest Ratio First:");
+        for (Experiment experiment : ratioResult) {
+            System.out.println("  " + experiment.id + ": " + experiment.name);
+        }
+        System.out.println("Adjusted mass: " +
+        ManifestEvaluator.calculateAdjustedMass(ratioResult) + " kg");
+    
+        System.out.println("Total science rating: " +
+        ManifestEvaluator.calculateRating(ratioResult));
+    }
 }

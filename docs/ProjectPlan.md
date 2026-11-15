@@ -4,7 +4,7 @@
 ## Responsibility Breakdown
 - Addie – Communications Lead
 - Dylan – Verification Lead
-- Anupa – Implementation Lead (pending confirmation)
+- Anupa – Implementation Lead
 
 ## Project Milestones
 

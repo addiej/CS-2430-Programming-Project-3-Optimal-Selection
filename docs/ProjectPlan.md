@@ -11,7 +11,7 @@
 | Task | Status | Responsible | **Commit Evidence**
 |---|---|---|
 | Create repository and invite collaborators | Done | Addie | 
-| Create `/docs` folder and planning documents | Done | Addie | #10d6f21, #b88ad4f, # bd8a94b
+| Create `/docs` folder and planning documents | Done | Addie | 10d6f21, b88ad4f, bd8a94b
 | Review revised Change Request | Done | Addie |
 | Create `Experiment.java` class | Done (not tested) | Addie |
 | Enter 13 revised experiments in `Main.java` | Done (not tested) | Addie |

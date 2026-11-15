@@ -4,6 +4,6 @@
 //The Knapsack Problem
 //Purpose: Compare greedy algorithms and brute-force search to optimize a science payload.
 
-public class main {
+public class Main {
 
 {

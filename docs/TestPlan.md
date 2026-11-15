@@ -42,7 +42,11 @@ Test 8: Brute-Force Search
 - Actual: Pending implementation.
 
 Additional Verification
+- Confirm all three greedy strategies produce valid manifests.
 - Confirm no accepted solution exceeds 700 kg adjusted mass.
 - Confirm brute force evaluates all 8,192 subsets.
 - Confirm the three highest-rated valid subsets are displayed.
+- Confirm each displayed result includes selected experiments, adjusted mass, and total rating.
 - Compare all three greedy results against the brute-force optimum.
+- Record actual results after running the Java program.
+- Document any failed tests and corrections made.

@@ -60,7 +60,7 @@ public class GreedySolver {
             }
         }
     }
-    }
+    
     return java.util.Arrays.copyOf(selected, selectedCount);
     }
     // Selects experiments by highest rating-to-mass ratio first.

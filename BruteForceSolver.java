@@ -19,7 +19,7 @@ public class BruteForceSolver {
       }
     }
   
-    validSubsets.sort((a, b) ->
+  validSubsets.sort((a, b) ->
       Integer.compare(ManifestEvaluator.calculateRating(b),
                       ManifestEvaluator.calculateRating(a)));
     System.out.println("Total subsets evaluated: " + totalSubsets);

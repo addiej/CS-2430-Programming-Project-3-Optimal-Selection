@@ -5,7 +5,7 @@
 
 | Team Member | Assigned Role | Contributions |
 |---|---|---|
-| Addie | Communications Lead | Repository setup, project planning, documentation, initial Java implementation, and team coordination |
+| Addie | Communications Lead | Repository setup, project planning, documentation, initial Java implementation |
 | Dylan | Verification Lead | |
 | Anupa | Implementation Lead | |
 
